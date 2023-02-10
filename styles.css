@@ -1,0 +1,474 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+span{
+    color: rgb(150, 109, 76);
+}
+
+.cover{
+    min-height: 670px;
+    background-image: url("/images/bride-g84c1bf0cf_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.container{
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:60px;
+    width: 100%;
+    margin-bottom: 70px;
+    position: fixed;
+    background-color: rgb(255, 255, 255 , .9);
+    box-shadow: 1px 1px 12px .2px rgb(150, 109, 76 , .3);
+}
+
+.logo a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.logo a span{
+    font-size: x-large;
+    color: rgb(150, 109, 76);
+}
+
+.navbar .nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .nav li{
+    list-style-type: none;
+}
+
+.navbar .nav li a{
+    /* border: 3px solid gold; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    transition: .6s;
+    padding: 7px;
+}
+
+.navbar .nav li a:hover{
+    color: rgb(150, 109, 76);
+    text-decoration: underline;
+    /* background-color: rgb(187, 45, 20); */
+    /* border-radius: 20px;*/
+    transform: scale(0.2); 
+}
+
+.btn button a{
+    color:rgb(0, 0, 0) ;
+    text-decoration: none;
+    transition: .2s;
+    /* border: .5px solid rgb(104, 82, 65); */
+}
+
+.btn button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    /* border: none; */
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s;
+    font-weight: bolder;
+}
+
+.btn button:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 255, 255);
+    color: rgb(150, 109, 76);
+    border: none solid rgb(150, 109, 76);
+    
+}
+.btn button a:hover{
+    transform: scale(1.9);
+    background-color: rgb(255, 255, 255);
+    color: rgb(150, 109, 76);
+}
+
+.btn span{
+    padding: 0px 10px;
+    font-size: x-large;
+    display: none;
+}
+
+.films{
+    /* border: 2px solid yellow;     */
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    gap: 10px;
+}
+.films a{
+    margin-top: 300px;
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid rgb(138, 100, 70);
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 23px;
+    background-color: rgb(138, 100, 70 , .3);
+    transition: .5s;
+}
+.films a:hover{
+    background-color: white;
+    border: 2.5px solid white;
+    color:  rgb(138, 100, 70);
+    transform: scale(1.1);
+}
+
+/*--------------------- ABOUT ME------------------- */
+.About{
+    height: 660px;
+    background-image: url("/images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.About .intro{
+    margin-top: 132px;
+    text-align: center;
+}
+.About .intro h1{
+    letter-spacing: 4px;
+}
+.About .intro h4{
+    letter-spacing: 7px;
+}
+
+.About .text{
+    color: white;
+    text-align: center;
+}
+.touch button{
+    background-color: transparent;
+    margin-top: 10px;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid rgb(138, 100, 70);
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 23px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .5s;
+}
+.touch button:hover{
+    background-color: white;
+    border: 2.5px solid white;
+    color:  rgb(138, 100, 70);
+    transform: scale(1.1);
+}
+
+
+/*--------------------- SERVICES------------- */
+#My_services{
+    height: 655px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.service{
+    /* border: 1px solid purple; */
+    width: 80%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(104, 82, 65);
+    text-align: center;
+}
+
+.container1{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+
+}
+.Box{
+    height: 200px;
+    width: 250px;
+    border: 1px solid rgb(202, 196, 191);
+    box-shadow: 0px 0px 10px 2px rgb(209, 202, 202);
+
+}
+.Box h3{
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: underline;
+    color: rgb(104, 82, 65);
+    /* transition: 10s ; */
+}
+.Box p{
+    padding: 0px 7px;
+}
+
+
+/* ----------------------contact me ------------------------*/
+.contact{
+    height: 658px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact h1{
+    font-size: 63px;
+    color: rgb(104, 82, 65);
+}
+
+.form input , textarea{
+    border: 2px solid rgb(133, 99, 73);
+    margin: 10px 0px;
+    padding: 7px 9px;
+    border-radius: 13px;
+}
+.form button{
+    background-color: rgb(90, 74, 62);
+    margin-top: 10px;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(138, 100, 70);
+    padding: 12px 42px;
+    font-weight: bold;
+    border-radius: 13px;
+    transition: .5s;
+}
+
+.form button:hover{
+    background-color: rgb(104, 82, 65);
+    color:  rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+.Footer{
+    /* height: 300px; */
+    height: 100%;
+    background-color: rgb(104, 82, 65);
+}
+.Fcontainer{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+
+}
+.Foot{
+    margin-top: 70px;
+}
+.Foot h2 {
+    letter-spacing: 7px;
+    color: white;
+    margin-bottom: 10px;
+}
+.Foot p{
+    color: white;
+}
+.Foot ul li{
+    margin: 6px 3px;
+    color: white;
+    list-style-type: square;
+}
+.Foot ul li a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.Foot ul li a:hover{
+    color: black;
+}
+.copy{
+    margin-top: 28px;
+    text-align:center;
+    color: white;
+    letter-spacing: 4px;
+    font-size: small;
+}
+
+
+/* -------------------------
+-----TAB RESPONSIVE----------
+------------------------ */
+@media only screen and (max-width: 800px)
+{
+
+    .navbar{
+
+        display: none;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .logo{
+        margin: 0px 30px;
+    }
+    .btn{
+        margin: 0px 30px;
+    }
+
+    #My_services{
+        display: block;
+    }
+    .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    .container1{
+        width: 100%;
+        position: relative;
+        grid-template-columns: 2fr 2fr;
+    }
+    .Box{
+        position: relative;
+        left: 40px;
+    
+    }
+
+
+
+}
+
+
+/* -------------------------
+-----TAB RESPONSIVE 2----------
+------------------------ */
+@media only screen and (max-width: 685px){
+
+    #My_services{
+        display: block;
+    }
+    .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    .container1 {
+        width: 100%;
+        position: relative;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .Box{
+        position: relative;
+        left: 40px;
+    }
+}
+
+
+/* -------------------------
+-----RESPONSIVE 3----------
+------------------------ */
+@media only screen and (max-width: 590px){
+    .Box {
+        height: 179px;
+        width: 220px;
+    }
+    .Box p {
+        font-size: small;
+    }
+}
+
+
+/* -------------------------
+-----RESPONSIVE 4----------
+------------------------ */
+@media only screen and (max-width: 570px){
+    .Fcontainer {
+        flex-wrap: wrap;
+    }
+
+    .container1 {
+        gap: 18px;
+    }
+    .Box {
+        height: 216px;
+        width: 170px;
+    }
+    .Box h3{
+        letter-spacing: 1px;
+    }
+}
+
+/* -------------------------
+-----RESPONSIVE 5----------
+------------------------ */
+@media only screen and (max-width: 420px){
+    .container1 {
+      
+        grid-template-columns: 1fr;
+    }
+    .container1 {
+        gap: 8px;
+    }
+
+    .Box{
+        height: 130px;
+        width: 350px;
+        left: 20px;
+    }
+    .Box h3{
+        letter-spacing: 5px;
+    }
+}
+
+/* -------------------------
+-----RESPONSIVE 6----------
+------------------------ */
+@media only screen and (max-width: 390px){
+
+    .Box{
+        width: 320px;
+        left: 9px;
+
+    }
+    .Box h3{
+        padding: 0px;
+    }
+    .Box p{
+        font-size: smaller;
+
+    }
+
+
+}
+
